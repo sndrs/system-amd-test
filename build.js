@@ -53,7 +53,7 @@ define('app/core.js', ['exports', 'app/es6/deps.js', 'app/cjs/deps.js', 'babel-r
 
   var _amd = (0, _babelRuntimeHelpersInteropRequireDefault['default'])(_appAmdDepsJs);
 
-  // console.log('es6: ', es6);
-  // console.log('amd: ', amd);
-  // console.log('common: ', common);
+  console.log('es6: ', _appEs6DepsJs);
+  console.log('amd: ', _amd['default']);
+  console.log('common: ', _common['default']);
 });
