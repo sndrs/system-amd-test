@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+    var curl = {
+        apiName: 'require',
+        paths: {
+            'app/core.js': '/core.js'
+        }
+    }
+    </script>
+    <script src="node_modules/curl-amd/dist/curl-with-js-and-domReady/curl.js"></script>
+    <script>
+    require(['app/core.js', 'domReady!'], function () {
+        console.log('loaded app/core.js');
+        require(['app/amd.js'], function (amd) {
+            console.log('loaded app/amd.js from core');
+        })
+    })
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>
