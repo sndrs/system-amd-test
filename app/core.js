@@ -6,6 +6,6 @@ import amd from './amd/deps.js';
 
 
 
-// console.log('es6: ', es6);
-// console.log('amd: ', amd);
-// console.log('common: ', common);
+console.log('es6: ', es6);
+console.log('amd: ', amd);
+console.log('common: ', common);
